@@ -1,0 +1,24 @@
+<% include partials/header.ejs %>
+    <header class="jumbotron">
+        <h1>YelpStore - All Items For Sale</h1>
+        <p>You can find anything and everything at the cheapest price!</p>
+            <a href="/itemsforsale/new" class="btn btn-primary btn-lg">Add new item</a>
+    </header>
+    <article class="container-fluid">
+     <main class="row">
+         <header class="col-lg-12">
+                <h3>Our most popular items</h3>
+            </header>
+            <% items.forEach(function(item) { %>
+                <section class="col-md-3 col-sm-6">
+                 <figure class="img-thumbnail">
+                     <img src=<%=item.picture %>>
+                        <h4>
+                         <%= item.name %>
+                        </h4>
+                    </figure>
+                </section>
+            <% }); %>
+        </main> 
+    </article>
+<% include partials/footer.ejs %>

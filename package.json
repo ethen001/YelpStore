@@ -1,0 +1,31 @@
+{
+  "name": "yelpclothing",
+  "version": "1.0.0",
+  "description": "This is a sample dynamic website buld with backend development I have so far",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "ejs",
+    "database",
+    "postgresql",
+    "clothing",
+    "marker",
+    "javascript",
+    "node"
+  ],
+  "author": "Enger L. Then",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "knex": "^0.15.2",
+    "pg": "^6.0.1",
+    "pg-format": "^1.0.4",
+    "postgresql": "0.0.1",
+    "sequelize": "^4.39.0"
+  }
+}

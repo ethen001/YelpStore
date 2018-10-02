@@ -1,0 +1,35 @@
+<% include partials/header.ejs %>
+<div class="container">
+    <div id="item-form-cont">
+        <div class="item-form">
+            <h1>Create new Item</h1>
+            <form action="/itemsforsale" method="POST">
+                <div class="form-group">
+                    <input type="text" name="itemName" class="form-control" placeholder="item name">
+                </div>
+                <div class="form-group">
+                    <input list="conditions" name="condition" class="form-control" placeholder="condition">
+                </div>
+                <datalist id="conditions">
+                    <option value="new">
+                    <option value="refurbished">
+                    <option value="used">
+                </datalist>
+                <div class="form-group">
+                    <input type="number" step="0.01" name="price" class="form-control" placeholder="item price">
+                </div>
+                <div class="form-group">
+                    <input type="url" name="itempicture" class="form-control" placeholder="post url of picture">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="descr" class="form-control" placeholder="description">
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-lg btn-primary btn-block" value="Upload">
+                </div>
+            </form>
+            <a href="/itemsforsale"> All items</a>
+        </div>
+    </div>
+</div>
+<% include partials/footer.ejs %>
